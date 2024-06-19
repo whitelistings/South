@@ -1,0 +1,51 @@
+getgenv().script_key = script_key; -- DO NOT TOUCH
+ getgenv().South = {
+    Aimbot = {
+        Keybind = Enum.KeyCode.E,
+        CamlockPrediction = 0.39,
+        Prediction = 0.1347,
+
+        Basic = true,
+        TargetPart = "Head",
+
+        NearestPart = true,
+        MultipleTargetPart = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"},
+
+        CameraSmoothing = 0.06,
+        CameraShake = 0,
+        JumpOffset = -1.50
+    },
+    FOV = {
+        Visible = false,
+        Color = Color3.fromRGB(255, 255, 255),
+        Size = 400,
+        Transparency = 0.2,
+        Filled = false
+    },
+    Checks = {
+        DisableOnTargetDeath = true,
+        DisableOnPlayerDeath = true,
+        CheckKoStatus = true,
+    },
+    Macro = {
+        Enabled = false,
+        SpeedGlitchKey = Enum.KeyCode.X,
+    },
+    ESP = {
+        Distance = false,
+        Weapon = false,
+        Health = false,
+        Name = false
+    },
+    Misc = {
+        RejoinServer = false,
+    },
+    Spin = {
+        Enabled = true,
+        SpinSpeed = 2100,
+        Degrees = 360,
+        Keybind = Enum.KeyCode.V,
+    },
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ae478210fd5dc451728417b175a8b0b1.lua"))()
